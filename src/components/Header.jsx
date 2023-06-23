@@ -1,13 +1,10 @@
-import { Capitalize } from "nexious-library";
+import { Logo } from "nexious-library";
+import vitelogo from "../assets/vite.svg";
 
 const Header = ({ data }) => {
   return (
     <header>
-      <h1>
-        {data.title.split(" ").map((t) => (
-          <Capitalize data={t} key={t} />
-        ))}
-      </h1>
+      <Logo data={{ url: vitelogo, alt: data.title }} title={data.title} />
     </header>
   );
 };
