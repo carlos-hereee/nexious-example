@@ -1,3 +1,44 @@
 {
-  "title": "nexious library demo"
+  "title": "nexious library demo",
+  "menu": [
+    {
+      "name": "spanish",
+      "icon": "flag",
+      "isToggle": true,
+      "isAlt": true,
+      "uid": "menu-item-1",
+      "ping": 0,
+      "alt": "english"
+    },
+    {
+      "name": "services",
+      "icon": "services",
+      "uid": "menu-item-2",
+      "ping": 0,
+      "isAlt": false
+    },
+    {
+      "name": "booking",
+      "icon": "booking",
+      "uid": "menu-item-3",
+      "ping": 0,
+      "isAlt": false
+    },
+    {
+      "name": "checkout",
+      "icon": "checkout",
+      "uid": "menu-item-4",
+      "ping": 0,
+      "isAlt": false
+    },
+    {
+      "name": "dashboard",
+      "icon": "dashboard",
+      "uid": "menu-item-5",
+      "ping": 0,
+      "isAlt": true,
+      "isPrivate": true,
+      "alt": "login"
+    }
+  ]
 }
