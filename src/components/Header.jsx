@@ -1,16 +1,17 @@
 import { useState } from "react";
-// import { Link, useNavigate } from "react-router-dom";
 import { BurgerButton, Logo, Navbar } from "nexious-library";
 import vitelogo from "../assets/vite.svg";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Header = ({ data }) => {
   const [isActive, setActive] = useState(false);
   const [isClose, setClose] = useState(false);
   const [menu, setMenu] = useState(data.menu || []);
+  const navigate = useNavigate();
 
-  const handleToggle = (e) => {};
-  const handleClick = (e) => {};
+  const handleToggle = (e) => {
+    setMenu(menu.map((i) => (i.uid === e.uid ? { ...i, isAlt: !i.isAlt } : i)));
+  };
 
   return (
     <header>
@@ -22,11 +23,17 @@ const Header = ({ data }) => {
           show={{ isActive, isClose }}
           menu={menu}
           toggle={handleToggle}
-          click={handleClick}
+          click={(e) => navigate(`${e.name}`)}
         />
       </nav>
-      <nav>
+      <nav className="mobile-navigation">
         <BurgerButton isBurger={isActive} click={() => setActive(!isActive)} />
+        <Navbar
+          show={{ isActive, isClose }}
+          menu={menu}
+          toggle={handleToggle}
+          click={(e) => navigate(`${e.name}`)}
+        />
       </nav>
     </header>
   );
