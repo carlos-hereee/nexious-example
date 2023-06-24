@@ -2,7 +2,7 @@
   "title": "nexious library demo",
   "logo": {
     "alt": "industry-brand",
-    "url": "file:/src/assets/vite.svg"
+    "url": "src/assets/vite.svg"
   },
   "menu": [
     {
