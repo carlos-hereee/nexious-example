@@ -1,10 +1,10 @@
-import { Footer, Header } from "nexious-library";
 import data from "./data/example.data.json";
+import { Header, Footer } from "nexious-library";
 
 function App({ children }) {
   return (
     <div className="app">
-      <Header menu={data.menu} data={data.logo} title={data.title} />
+      <Header menu={data.menu} logo={data.logo} title={data.title} />
       {children}
       <Footer title={data.title} />
     </div>
