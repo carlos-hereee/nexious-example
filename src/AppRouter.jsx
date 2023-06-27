@@ -1,10 +1,12 @@
 import { Route, Routes } from "react-router-dom";
 import Landing from "./pages/Landing";
+import AppCalendar from "./pages/Calendar";
 
 const AppRouter = () => {
   return (
     <Routes>
-      <Route path="/" element={<Landing />} />
+      <Route exact path="/" element={<Landing />} />
+      <Route path="/calendar" element={<AppCalendar />} />
     </Routes>
   );
 };
