@@ -1,6 +1,5 @@
 import data from "./data/example.data.json";
-import { Header, Footer } from "nexious-library";
-
+import { Header, Footer } from "nexious-library/@nxs-template";
 function App({ children }) {
   return (
     <div className="app">

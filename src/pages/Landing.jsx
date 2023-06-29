@@ -1,7 +1,7 @@
 import { useState } from "react";
 import viteLogo from "../assets/vite.svg";
 import reactLogo from "../assets/react.svg";
-import { Card } from "nexious-library";
+import { Card } from "nexious-library/@nxs-organism";
 
 const Landing = () => {
   const [count, setCount] = useState(0);
