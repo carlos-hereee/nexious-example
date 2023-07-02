@@ -1,10 +1,8 @@
-import { useState } from "react";
 import viteLogo from "../assets/vite.svg";
 import reactLogo from "../assets/react.svg";
 import { Card } from "nexious-library/@nxs-organism";
 
 const Landing = () => {
-  const [count, setCount] = useState(0);
   const header = {
     title: "lorem ipsum",
     hasHero: true,
@@ -32,7 +30,10 @@ const Landing = () => {
     ],
   };
   return (
-    <div className="flex-d-column">
+    <div className="card-container">
+      <Card header={header} body={body} footer={footer} />
+      <Card header={header} body={body} footer={footer} />
+      <Card header={header} body={body} footer={footer} />
       <Card header={header} body={body} footer={footer} />
     </div>
   );

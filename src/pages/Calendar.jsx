@@ -5,7 +5,7 @@ import data from "../data/example.data.json";
 const AppCalendar = () => {
   const [date, setDate] = useState(new Date());
   const handleDayClick = (e) => {
-    console.log("day clicked ", e);
+    // console.log("day clicked ", e);
   };
   return (
     <div>

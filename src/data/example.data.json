@@ -41,7 +41,7 @@
       "uid": "e-123",
       "response": "9am - 10am",
       "isOpen": false,
-      "date": "June 28 2023",
+      "date": "July 4 2023",
       "start": 9,
       "end": 10
     },
@@ -49,7 +49,7 @@
       "uid": "e-123",
       "response": "12pm - 1pm",
       "isOpen": true,
-      "date": "June 29 2023",
+      "date": "July 29 2023",
       "start": 12,
       "end": 13
     },
@@ -57,7 +57,7 @@
       "uid": "e-123",
       "response": "9am - 10am",
       "isOpen": true,
-      "date": "June 30 2023",
+      "date": "July 30 2023",
       "start": 9,
       "end": 10
     },
@@ -65,7 +65,7 @@
       "uid": "e-123",
       "response": "9:30am - 10:30am",
       "isOpen": false,
-      "date": "June 29 2023",
+      "date": "July 29 2023",
       "start": 930,
       "end": 1030
     }
