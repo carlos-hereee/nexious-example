@@ -11,8 +11,6 @@ export const AppState = ({ children }) => {
     appName: english.appName,
     menu: english.menu,
     logo: english.logo,
-    translation: english,
-    spanish: spanish,
   };
   const [state, dispatch] = useReducer(reducer, initialState);
 
