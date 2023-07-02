@@ -1,22 +1,28 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Header, Footer } from "nexious-library/@nxs-template";
-import data from "./data/example.data.json";
+import enData from "./data/en-example.data.json";
+import esData from "./data/es-example.data.json";
+import { AppContext } from "./context/AppContext";
 
 function App({ children }) {
-  const [lan, setLan] = useState();
+  const { updateLocale, locale } = useContext(AppContext);
+  const [data, setData] = useState(enData);
 
   useEffect(() => {
-    if (lan) {
-      console.log("lan", lan);
+    if (locale === "english" || locale === "ingles") {
+      setData(esData);
     }
-  }, [lan]);
+    if (locale === "espanol" || locale === "spanish") {
+      setData(esData);
+    }
+  }, [locale]);
   return (
     <div className="app">
       <Header
         menu={data.menu}
         logo={data.logo}
         title={data.title}
-        setLanguage={(e) => setLan(e)}
+        setLanguage={(e) => updateLocale(e)}
       />
       {children}
       <Footer title={data.title} />

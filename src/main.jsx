@@ -6,13 +6,16 @@ import { BrowserRouter } from "react-router-dom";
 // load library css
 import "nexious-library/@index.css";
 import "./index.css";
+import { AppState } from "./context/AppContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App>
-        <AppRouter />
-      </App>
+      <AppState>
+        <App>
+          <AppRouter />
+        </App>
+      </AppState>
     </BrowserRouter>
   </React.StrictMode>
 );
