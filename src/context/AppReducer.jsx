@@ -4,6 +4,8 @@ export const reducer = (state, action) => {
       return { ...state, isLoading: action.payload };
     case "UPDATE_LOCALE":
       return { ...state, locale: action.payload };
+    case "UPDATE_TRANSLATION":
+      return { ...state, translation: action.payload };
     default:
       return state;
   }
