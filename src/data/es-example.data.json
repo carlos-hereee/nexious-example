@@ -1,18 +1,18 @@
 {
-  "title": "nexious library demo",
+  "appName": "nexious libreria demo",
   "logo": {
     "alt": "marca de la industria",
-    "url": "src/assets/vite.svg"
+    "url": "src/assets/vite.svg",
+    "name": "nexious library demo",
+    "appName": "nexious library demo"
   },
   "menu": [
     {
       "name": "espanol",
       "icon": "flag",
       "isToggle": true,
-      "isAlt": true,
       "uid": "menu-item-1",
-      "ping": 0,
-      "alt": "ingles"
+      "ping": 0
     },
     {
       "name": "tienda",

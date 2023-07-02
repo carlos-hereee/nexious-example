@@ -6,6 +6,12 @@ export const reducer = (state, action) => {
       return { ...state, locale: action.payload };
     case "UPDATE_TRANSLATION":
       return { ...state, translation: action.payload };
+    case "UPDATE_MENU":
+      return { ...state, menu: action.payload };
+    case "UPDATE_LOGO":
+      return { ...state, logo: action.payload };
+    case "UPDATE_APP_NAME":
+      return { ...state, appName: action.payload };
     default:
       return state;
   }
